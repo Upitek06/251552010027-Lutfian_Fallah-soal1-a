@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        NAMA: "Lutfian Fallah"
+        NIM: "251552010027"
+        PRODI: "Teknik Informatika"
+        KAMPUS: "STMIK Tazkia"
+        MINAT: "Cloud Computing dan DevOps"
+        ALASAN: "Teknologi adalah kunci perubahan dunia. Saya ingin menjadi bagian dari inovasi yang memberikan dampak nyata bagi masyarakat."
+        CITA: "Saya ingin menjadi hacker dengan ketelatenan tinggi, kemudian melanjutkan studi S2 Dikampus top 10 dunia melalui karya tulis jurnal dan buah ide inovasi.."
+    ports:
+      - "8101:80"
+    container_name: profil-lutfian
